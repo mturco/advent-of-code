@@ -4,12 +4,12 @@
 
 **With provided data set:**
 
-`yarn start <puzzle-id> <dataset-id>`
+`yarn start <puzzle-number>`
 
-e.g. `yarn start 1b 1`
+e.g. `yarn start 1` or `yarn start 1b`
 
 **With test data set:**
 
-`yarn start <puzzle-id> test <dataset>`
+`yarn start <puzzle-number> <dataset>`
 
-e.g. `yarn start 2a test '1,0,0,0,99'`
+e.g. `yarn start 2 '1,0,0,0,99'`

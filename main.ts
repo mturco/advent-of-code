@@ -26,8 +26,8 @@ async function getSolverParts(
 ): Promise<Record<'one' | 'two', Function>> {
   try {
     return await import(`./puzzles/${parseInt(puzzle, 10)}`);
-  } catch {
-    console.error(`Solution for ${puzzle} wasn't found.`);
+  } catch (err) {
+    console.error(`Solution for ${puzzle} wasn't found.`, err);
     process.exit(1);
   }
 }
